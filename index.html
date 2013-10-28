@@ -1,0 +1,105 @@
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+    <title>Tic Tac Toe</title>
+
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script type="application/javascript" src="underscore-min.js"></script>
+    <script type="application/javascript" src="ticTacToe.js"></script>
+
+    <style>
+
+    body{
+      margin: auto;
+    }
+
+    h1 {
+      font: 80px Futura;
+      font-variant: small-caps;
+      color: Tan;
+      text-align: center;
+    }
+
+    div {
+      margin: auto;
+    }
+
+    #board {
+      width: 600px;
+      height: 600px;
+    }
+    .square {
+      width: 190px;
+      height: 190px;
+      float: left;
+      border: 5px solid white;
+      font: 150px Futura;
+      text-align: center;
+      color: white;
+    }
+    .default {
+      background: gray;
+    }
+    .player1 {
+      background: hotPink;
+    }
+    .player2 {
+      background: DeepSkyBlue;
+    }
+
+    #player {
+      text-align: center;
+      font: 40px Futura;
+      margin-bottom: 40px;
+    }
+
+    .playerfont1{
+      color: HotPink;
+    }
+
+    .playerfont2{
+      color: DeepSkyBlue;
+    }
+
+    </style>
+
+  </head>
+
+  <body>
+    <script>
+      $(document).ready(function() {
+        var TIC = new TTT.Game();
+        TIC.run();
+      });
+
+    </script>
+    <h1>Tic Tac Toe</h1>
+
+    <div id="player"></div>
+
+    <div id="board">
+
+      <div class="row">
+        <div class="square default" value="0, 0"></div>
+        <div class="square default" value="0, 1"></div>
+        <div class="square default" value="0, 2"></div>
+      </div>
+
+      <div class="row">
+        <div class="square default" value="1, 0"></div>
+        <div class="square default" value="1, 1"></div>
+        <div class="square default" value="1, 2"></div>
+      </div>
+
+      <div class="row">
+        <div class="square default" value="2, 0"></div>
+        <div class="square default" value="2, 1"></div>
+        <div class="square default" value="2, 2"></div>
+      </div>
+
+    </div>
+
+  </body>
+
+</html>
